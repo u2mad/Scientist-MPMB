@@ -147,7 +147,7 @@ ClassSubList["chemistry"] = {
         source : ["S&S", 136],
         minlevel : 2,        
 				description : "\n   " + "You become proficient with the artisan's tools (chemistry) and the Arcana skill. If you are already proficient in Arcana, choose another Intelligence skill.",
-        toolProfs : [["Chemistry Tools"]],
+        toolProfs : [["Alchemist Supplies"]],
         skills : ["Arcana"],
         skillstxt : ["\n\n" + toUni("Verity") + ": Expertise in Arcana."],
         },
