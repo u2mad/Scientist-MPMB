@@ -97,7 +97,7 @@ features : {
 			description : "\n   " + "Any time you make an ability check using a tool you’re proficient in, you add twice your proficiency instead of just your proficiency.",
 		},
 		
-				"subclassfeature1" : { 
+			"subclassfeature1" : { 
 			name : "Research Focus",
 			source : ["S&S", 103],
 			minlevel : 2,
@@ -138,12 +138,12 @@ features : {
 //Create the Chemistry subclasses
 ClassSubList["chemistry"] = {
         regExpSearch : /^(?=.*chemistry).*$/i,
-				subname : "Chemistry",
+	subname : "Chemistry",
         source : ["S&S", 135],
-				features : {
+	features : {
 				
-				"subclassfeature2" : {
-				name : "Bonus Proficiencies",
+	"subclassfeature2" : {
+	name : "Bonus Proficiencies",
         source : ["S&S", 136],
         minlevel : 2,        
 				description : "\n   " + "You become proficient with the artisan's tools (chemistry) and the Arcana skill. If you are already proficient in Arcana, choose another Intelligence skill.",
@@ -152,8 +152,8 @@ ClassSubList["chemistry"] = {
         skillstxt : ["\n\n" + toUni("Verity") + ": Expertise in Arcana."],
         },
 
-				"subclassfeature2.1" : {
-				name : "Explosive Innovation",
+	"subclassfeature2.1" : {
+	name : "Explosive Innovation",
         source : ["S&S", 136],
         minlevel : 2,        
         description : "\n   " + "Whenever a gadget or invention you activate would deal damage, you add your Intelligence modifier to the damage dealt. At 3rd level, you don’t gain the Signature Weapon feature. Instead, at 5th level this feature becomes more powerful.",
@@ -161,22 +161,29 @@ ClassSubList["chemistry"] = {
         usages : [0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6],
         },
 
+	"signature weapon" : {
+	name : "Signature Weapon",
+	source : ["S&S", 134],
+	minlevel : 3,
+	description : "\n   " + "Replaced by Explosive Innovation",
+	},
+		
         "subclassfeature6" : {
-				name : "Elemental Analysis and Purification",
+	name : "Elemental Analysis and Purification",
         source : ["S&S", 136],
         minlevel : 6,        
         description : "\n   " + "You know how to run quick chemical test which takes 1 minute, during which you can determine all the known elements (and the percentage of each) that make up a material, liquid, or a local atmosphere." + "\n   " + "In addition, you can take a solid or liquid that is a mix of two or more compounds and purify it into its base components.",
         },
 
-				"subclassfeature10" : {
-				name : "Formulaic Alteration",
+	"subclassfeature10" : {
+	name : "Formulaic Alteration",
         source : ["S&S", 136],
         minlevel : 10,        
         description : "\n   " + "Whenever you use an invention or gadget that deals damage, you may choose acid, cold, fire, lightning, necrotic, radiant, or thunder damage.",
         },
 
-				"subclassfeature14" : {
-				name : "Delayed Consumption",
+	"subclassfeature14" : {
+	name : "Delayed Consumption",
         source : ["S&S", 135],
         minlevel : 14,        
         description : "\n   " + "Choose an invention in your research journal that has a target of self or a creature. You infuse a potion with a charge from your Core and drink it, lowering your number of Core charges for the day by one. Any time in the next 8 hours, as a bonus action, you can activate the effect of the chosen invention, even if the effect would normally take longer than a bonus action to activate.",
@@ -197,27 +204,27 @@ ClassSubList["chemistry"] = {
 //Create the Computers subclasses
 ClassSubList["computers"] = {
         regExpSearch : /^(?=.*computers).*$/i,
-				subname : "Computers",
+	subname : "Computers",
         source : ["S&S", 136],
-				features : {
+	features : {
 				
-				"subclassfeature2" : {
-				name : "Bonus Proficiencies",
+	"subclassfeature2" : {
+	name : "Bonus Proficiencies",
         source : ["S&S", 137],
         minlevel : 2,        
-				description : "\n   " + "You become proficient with the Computers skill. If you are already proficient in Arcana, choose another Intelligence skill.",
+	description : "\n   " + "You become proficient with the Computers skill. If you are already proficient in Arcana, choose another Intelligence skill.",
         toolProfs : [["Computers", "Int"]],
         },
 
-				"subclassfeature2.1" : {
-				name : "Unique Programming",
+	"subclassfeature2.1" : {
+	name : "Unique Programming",
         source : ["S&S", 137],
         minlevel : 2,        
         description : "\n   " + "Choose three special programs to add to a personal computer of your choice. If your computer is compromised or destroyed, you can remove the programs from it with 1 minute of coding work and transplant them into another computer at no cost to yourself, but you can only have the programs active on one computer at a time. You add more at 6th and 10th level.",
         },
 
-				"subclassfeature14" : {
-				name : "Master Programming",
+	"subclassfeature14" : {
+	name : "Master Programming",
         source : ["S&S", 139],
         minlevel : 14,        
         description : "\n   " + "Your mastery over code and networks allows you to take your programs to the next level. Choose one master program to add to your personal computer along with your other programs. At 18th level, you choose a second master program from this list and add it to your personal computer.",
@@ -228,21 +235,21 @@ ClassSubList["computers"] = {
 //Create the Engineering subclasses
 ClassSubList["engineering"] = {
         regExpSearch : /^(?=.*engineering).*$/i,
-				subname : "Engineering",
+	subname : "Engineering",
         source : ["S&S", 139],
-				features : {
+	features : {
 				
-				"subclassfeature2" : {
-				name : "Bonus Proficiencies",
+	"subclassfeature2" : {
+	name : "Bonus Proficiencies",
         source : ["S&S", 140],
         minlevel : 2,        
-				description : "\n   " + "You become proficient with medium armor, shields, and Tinker Tools.",
+	description : "\n   " + "You become proficient with medium armor, shields, and Tinker Tools.",
         toolProfs : [["Tinker Tools"]],
         armor : [false, true, false, true],
         },
 
-				"subclassfeature2.1" : {
-				name : "Instant Wall",
+	"subclassfeature2.1" : {
+	name : "Instant Wall",
         source : ["S&S", 140],
         minlevel : 2,        
         description : "\n   " + "As an action, you can touch an inorganic surface within 5 feet of you and create a 1 foot thick, 5’ by 5’ wall of material. The surface your wall is created on must have enough mass to support the new wall, and the new wall is made of the same material as the spot you touched. If the surface can’t support the wall, this ability does nothing.",
@@ -253,21 +260,21 @@ ClassSubList["engineering"] = {
         },
 
         "subclassfeature6" : {
-				name : "Deconstruction Expert",
+	name : "Deconstruction Expert",
         source : ["S&S", 140],
         minlevel : 6,        
         description : "\n   " + "Damage you deal to objects and cover is doubled. At 18th level, damage you deal to objects and cover is quadrupled instead of doubled.",
         },
 
-				"subclassfeature10" : {
-				name : "Murder Holes",
+	"subclassfeature10" : {
+	name : "Murder Holes",
         source : ["S&S", 140],
         minlevel : 10,        
         description : "\n   " + "You and creatures you designate that take cover behind walls you build with the Instant Wall class feature gain a bonus 1d4 to damage rolls and don’t suffer penalties when attacking while having the covered condition.",
         },
 
-				"subclassfeature14" : {
-				name : "Debris Shield",
+	"subclassfeature14" : {
+	name : "Debris Shield",
         source : ["S&S", 140],
         minlevel : 14,        
         description : "\n   " + "When you use the Take Cover bonus action to gain the covered condition behind one 5’ by 5’ section of the walls you’ve created with your Instant Wall class feature, you can break apart one section of your wall as part of that bonus action. The broken wall floats around you in pieces, providing you with half cover for as long as you maintain the covered condition at the beginning of your turn.",
@@ -279,22 +286,22 @@ ClassSubList["engineering"] = {
 //Create the Medicine subclasses
 ClassSubList["medicine"] = {
         regExpSearch : /^(?=.*medicine).*$/i,
-				subname : "Medicine",
+	subname : "Medicine",
         source : ["S&S", 140],
-				features : {
+	features : {
 				
-				"subclassfeature2" : {
-				name : "Bonus Proficiencies",
+	"subclassfeature2" : {
+	name : "Bonus Proficiencies",
         source : ["S&S", 141],
         minlevel : 2,        
-				description : "\n   " + "You become proficient with the artisan's tools (chemistry) and the Arcana skill. If you are already proficient in Arcana, choose another Intelligence skill.",
+	description : "\n   " + "You become proficient with the artisan's tools (chemistry) and the Arcana skill. If you are already proficient in Arcana, choose another Intelligence skill.",
         toolProfs : [["Herbalism Kit"]],
         skills : ["Medicine"],
         skillstxt : ["\n\n" + toUni("Scientist") + ": Expertise in Medicine."],
         },
 
-				"subclassfeature2.1" : {
-				name : "Precise Intellect",
+	"subclassfeature2.1" : {
+	name : "Precise Intellect",
         source : ["S&S", 141],
         minlevel : 2,        
         description : "\n   " + "You get a number of precision dice. You can use them to apply an adrenaline shot, or curative booster.",
@@ -305,28 +312,28 @@ ClassSubList["medicine"] = {
         },
 
         "subclassfeature6" : {
-				name : "Tireless Caregiver",
+	name : "Tireless Caregiver",
         source : ["S&S", 141],
         minlevel : 6,        
         description : "\n   " + "During a short rest, you may pick up to your Intelligence modifier in creatues who are expending HD and cause them to heal an additional 1d8 HP. This increass to d10 at 10th level and d12 at 18th level.",
         },
 
-				"subclassfeature10" : {
-				name : "Expanded Precision",
+	"subclassfeature10" : {
+	name : "Expanded Precision",
         source : ["S&S", 141],
         minlevel : 10,        
         description : "\n   " + "You gain Bolstering Infusion and Cleansing Extract as options for your precision dice.",
         },
 
-				"subclassfeature14" : {
-				name : "Persistent Cunning",
+	"subclassfeature14" : {
+	name : "Persistent Cunning",
         source : ["S&S", 141],
         minlevel : 14,        
         description : "\n   " + "When you roll initiative and have no precision dice remaining, you regain 1 precision die.",
         },
 
-				"subclassfeature18" : {
-				name : "Greater Precision",
+	"subclassfeature18" : {
+	name : "Greater Precision",
         source : ["S&S", 141],
         minlevel : 18,        
         description : "\n   " + "You gain Rejuvenating Tincture and Reviving Injuection as options for your precision dice.",
